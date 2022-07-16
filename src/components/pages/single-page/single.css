@@ -1,0 +1,13 @@
+.dark .card {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark body {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark .App {
+    background-color: #000 !important;
+}

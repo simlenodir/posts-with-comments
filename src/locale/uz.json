@@ -1,0 +1,13 @@
+{
+    "header": {
+        "logo": "Yorliq",
+        "link":{
+            "blog": "Blog",
+            "about": "Men haqimda",
+            "posts": "Postlar"
+        }
+    },
+    "main": {
+        "text": "Bosh sahifa"
+    }
+}

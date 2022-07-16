@@ -1,0 +1,13 @@
+{
+    "header": {
+        "logo": "Logo",
+        "link":{
+            "blog": "Blog",
+            "about": "About me",
+            "posts": "Posts"
+        }
+    },
+    "main": {
+        "text": "Home page"
+    }
+}

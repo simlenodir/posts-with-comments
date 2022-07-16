@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import { Routes, Route } from "react-router-dom";
+import { Header } from "./components/header/header";
+import { Blog } from "./components/pages/blog/blog";
+import { About } from "./components/pages/about/about";
+import { languages } from "./locale";
+import { useTheme } from "./hooks/theme";
+import { useLang } from "./hooks/lang";
+import { Comments, Posts } from "./components";
+import { SinglePage } from "./components/pages/single-page";
+export const App = () => {
+  const [theme] = useTheme();
+  const [lang] = useLang();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={theme}>
+      <Header />
+      <div className={theme}>
+        <Routes>
+          <Route path="/" element={<>{languages[lang].main.text}</>} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/posts" element={<Posts />} />
+          <Route path="/post/:postId" element={<SinglePage />} />
+
+          <Route path="*" element={<>Error</>} />
+        </Routes>
+      </div>
     </div>
   );
-}
-
-export default App;
+};

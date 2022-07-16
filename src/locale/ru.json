@@ -1,0 +1,13 @@
+{
+    "header": {
+        "logo": "Ru Logo",
+        "link":{
+            "blog": "Ru Blog",
+            "about": "Ru About me",
+            "posts": "Ru Post"
+        }
+    },
+    "main": {
+        "text": "Ru Home page"
+    }
+}
