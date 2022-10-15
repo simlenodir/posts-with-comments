@@ -30,7 +30,6 @@ export const SinglePage = () => {
       }
     })();
   }, [postId]);
-  console.log(comments);
   return (
     <div className=" full pb-3 container d-flex justify-content-center flex-column align-items-center ">
       <div className="card w-75 p-0 ">
