@@ -8,7 +8,7 @@ export const SinglePage = () => {
   const [open, setOpen] = useState(false);
   const { id, postId } = useParams();
   const [post, setPost] = useState([]);
-  const [comid, setComId] = useState(null);
+  // const [comid, setComId] = useState(null);
   useEffect(() => {
     (async () => {
       const res = await fetch(

@@ -5,7 +5,7 @@ import { About } from "./components/pages/about/about";
 import { languages } from "./locale";
 import { useTheme } from "./hooks/theme";
 import { useLang } from "./hooks/lang";
-import { Comments, Posts } from "./components";
+import {Posts } from "./components";
 import { SinglePage } from "./components/pages/single-page";
 export const App = () => {
   const [theme] = useTheme();
