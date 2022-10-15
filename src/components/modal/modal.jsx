@@ -2,7 +2,6 @@ import "./modal.css";
 import { useTheme } from "../../hooks/theme";
 export const Minmodal = ({
   title = "Title",
-  body = "content",
   children,
   modal,
   setModal,
