@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import "./modal.css";
 import { useTheme } from "../../hooks/theme";
 export const Minmodal = ({
