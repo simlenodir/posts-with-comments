@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Minmodal } from "../../modal";
 import "./single.css";
 export const SinglePage = () => {
   const navigate = useNavigate();
   const [comments, setComments] = useState([]);
   const [open, setOpen] = useState(false);
-  const { id, postId } = useParams();
+  const { postId } = useParams();
   const [post, setPost] = useState([]);
   // const [comid, setComId] = useState(null);
   useEffect(() => {

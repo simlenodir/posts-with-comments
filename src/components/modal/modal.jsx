@@ -15,12 +15,8 @@ export const Minmodal = ({
       setModal(false);
     }
   };
-  useEffect(() => {
-    window.addEventListener("keyup", handleCloseModal);
-    return () => {
-      window.removeEventListener("keyup", handleCloseModal);
-    };
-  }, [handleCloseModal]);
+
+
   return (
     <div className={theme}>
       <div
