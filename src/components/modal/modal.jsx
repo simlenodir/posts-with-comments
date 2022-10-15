@@ -20,7 +20,7 @@ export const Minmodal = ({
     return () => {
       window.removeEventListener("keyup", handleCloseModal);
     };
-  }, []);
+  }, [handleCloseModal]);
   return (
     <div className={theme}>
       <div

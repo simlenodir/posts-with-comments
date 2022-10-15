@@ -18,7 +18,7 @@ export const SinglePage = () => {
         return setPost(await res.json());
       }
     })();
-  }, [id]);
+  }, [postId]);
 
   useEffect(() => {
     (async () => {
@@ -29,7 +29,7 @@ export const SinglePage = () => {
         return setComments(await res.json());
       }
     })();
-  }, [id]);
+  }, [postId]);
   console.log(comments);
   return (
     <div className=" full pb-3 container d-flex justify-content-center flex-column align-items-center ">
